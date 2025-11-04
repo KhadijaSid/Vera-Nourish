@@ -78,7 +78,7 @@ gsap.to("#bottleAnimation", {
         x: 35,
         rotate: 0,
         scale: 0.7,
-        duration: 2,
+        duration: 3,
         delay: 10,
         scrollTrigger: {
           trigger: "#product3",
@@ -102,3 +102,4 @@ gsap.to("nav h3, h2", {
     start: "top -20",
   },
 });
+
