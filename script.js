@@ -83,7 +83,7 @@ gsap.to("#bottleAnimation", {
         scrollTrigger: {
           trigger: "#product3",
           start: "top center",
-          end: "bottom 100px",
+          // end: "bottom 100px",
           markers: true,
           scrub: true,
         },
@@ -102,4 +102,5 @@ gsap.to("nav h3, h2", {
     start: "top -20",
   },
 });
+
 
