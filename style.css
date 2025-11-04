@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#load{
+    height: 100%;
+    width: 100%;
+    background-color: #DBEEE3;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#load h1{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    color: #133817;
+    position: absolute;
+    animation: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes loader {
+    0%{
+        color: #133817;
+
+    }
+    30%{
+        color: #87A48D;
+
+    }
+    70%{
+        color: #133817;
+    }
+    100%{
+        color: #87A48D;
+    }
+}
+#load-vera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+#Plantright{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    transform: translateX(-30%);
+}
+#Plantleft{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    transform: translateX(30%);
+}
+#home{
+    min-height: 110vh;
+    width: 100%;
+    background-color: #DDF1E5;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #133817;
+    z-index: 111;
+}
+#left-tabs, #right-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-headings{
+    font-size: 14px;
+    font-weight: 400;
+}
+#left-tabs{
+    width: 20%;
+    margin-left: 50px;
+}
+#right-tabs{
+     width: 10%;
+    margin-right: 200px;
+}
+#right-tabs img{
+    height: 15px;
+    width: 15px;
+    color: #133817;
+}
+.nav-headings:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#home h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+}
+#home h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22vw;
+    color: #133817;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 180px;
+}
+#bottleAnimation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11;
+    position: relative;
+}
+#bottlecap, #bottle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#bottle{
+    top: -310px;
+    height: 370px;
+    width: 470px;
+    z-index: 2;
+}
+#bottlecap{
+    top: -330px;
+    height: 150px;
+    width: 470px;
+    z-index: 3;
+}
+#page2{
+    height: 100vh;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#rightsection{
+    height: 80%;
+    width: 50%;
+    margin-right: 100px;
+}
+#hand-img{
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    scale: 1.2;
+}
+#leftsection{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.product-ben{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20;
+}
+.pro-desc{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.pro-desc h3{
+    color: #133817;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+.pro-desc p{
+    color: #133817;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-image: url("imgs/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px;
+    gap: 30px;
+}
+#page3 h1{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+#page3 p{
+    color: #fff;
+    font-weight: 300;
+}
+#page3 button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: #fff;
+    color: #133817;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
